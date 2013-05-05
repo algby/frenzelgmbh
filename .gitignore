@@ -1,2 +1,5 @@
 
 composer.lock
+
+#ignore folders
+/vendor/*

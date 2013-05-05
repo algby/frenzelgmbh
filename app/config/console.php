@@ -7,7 +7,7 @@ return array(
 	'components' => array(
 		'db' => array(
 			'class' => 'yii\db\Connection',
-			'dsn' => 'sqlite:./data/frenzelgmbh.db',
+			'dsn' => 'sqlite:'.__DIR__.'/../data/frenzelgmbh.db',
 		),
 	),
 	'params' => array(

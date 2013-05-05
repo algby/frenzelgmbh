@@ -10,7 +10,7 @@ return array(
 		),
 		'db' => array(
 			'class' => 'yii\db\Connection',
-			'dsn' => 'sqlite:./data/frenzelgmbh.db',
+			'dsn' => 'sqlite:'.__DIR__.'/../data/frenzelgmbh.db',
 		),
 		'user' => array(
 			'class' => 'yii\web\User',

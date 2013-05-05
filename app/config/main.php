@@ -17,7 +17,9 @@ return array(
 		),
 		'db' => array(
 			'class' => 'yii\db\Connection',
-			'dsn' => 'sqlite:'.__DIR__.'/../../app/data/frenzelgmbh.db',
+			'dsn' => 'mysql:host=localhost;dbname=test',
+            'username' => 'root', 
+            'password' => '',
 		),
 		'user' => array(
 			'class' => 'yii\web\User',

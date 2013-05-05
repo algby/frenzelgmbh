@@ -7,7 +7,9 @@ return array(
 	'components' => array(
 		'db' => array(
 			'class' => 'yii\db\Connection',
-			'dsn' => 'sqlite:'.__DIR__.'/../data/frenzelgmbh.db',
+			'dsn' => 'mysql:host=localhost;dbname=test',
+            'username' => 'root', 
+            'password' => '',
 		),
 	),
 	'params' => array(

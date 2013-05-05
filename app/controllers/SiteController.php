@@ -10,8 +10,7 @@ class SiteController extends Controller
 {
 	public function actionIndex()
 	{
-		$data = User::find()->all();
-		echo $this->render('index',array('data'=>$data));
+		echo $this->render('index');
 	}
 
 	public function actionLogin()

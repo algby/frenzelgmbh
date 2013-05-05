@@ -4,15 +4,15 @@ class m130505_131012_users extends \yii\db\Migration
 {
 	public function up()
 	{
-		$this->createTable('tbl_user',array(
-            'id' => 'PK',
-            'username' => 'STRING NOT NULL',
-            'content' => 'TEXT',
-        ));
+		$this->db->createCommand()->createTable('tbl_user', array(
+            'id' => 'pk',
+            'username' => 'string NOT NULL',
+            'content' => 'text',
+        ))->execute();
 	}
 
 	public function down()
 	{
-		$this->dropTable('tbl_user');
+		$this->db->createCommand()->dropTable('tbl_user')->execute();
 	}
 }

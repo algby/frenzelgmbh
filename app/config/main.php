@@ -4,13 +4,19 @@ return array(
 	'id' => 'frenzelgmbh',
 	'basePath' => dirname(__DIR__),
 	'name' => 'Frenzel GmbH - Software Entwicklung, QlikView Consulting, Unternehmensplanung',
+	'modules' => array(
+		/*'gii'=>array(
+			'class' => 'yii\components\gii',
+			'password' => 'adm1n'
+		),*/
+	),
 	'components' => array(
 		'cache' => array(
 			'class' => 'yii\caching\FileCache',
 		),
 		'db' => array(
 			'class' => 'yii\db\Connection',
-			'dsn' => 'sqlite:'.__DIR__.'/../data/frenzelgmbh.db',
+			'dsn' => 'sqlite:'.__DIR__.'/../../app/data/frenzelgmbh.db',
 		),
 		'user' => array(
 			'class' => 'yii\web\User',

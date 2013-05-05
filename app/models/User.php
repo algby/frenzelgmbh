@@ -2,41 +2,59 @@
 
 namespace app\models;
 
-class User extends \yii\base\Object implements \yii\web\Identity
+class User extends \yii\db\ActiveRecord implements \yii\web\Identity
 {
 	public $id;
 	public $username;
 	public $password;
 	public $authKey;
 
-	private static $users = array(
-		'100' => array(
-			'id' => '100',
-			'username' => 'admin',
-			'password' => 'admin',
-			'authKey' => 'test100key',
-		),
-		'101' => array(
-			'id' => '101',
-			'username' => 'demo',
-			'password' => 'demo',
-			'authKey' => 'test101key',
-		),
-	);
+	/**
+     * Returns the static model of the specified AR class.
+     * @param string $className active record class name.
+     * @return Comments the static model class
+     */
+    public static function model($className=__CLASS__)
+    {
+        return parent::model($className);
+    }
+ 
+    /**
+     * @return string the associated database table name
+     */
+    public static function tableName()
+    {
+        return 'tbl_user';
+    }
+ 
+    /**
+     * @return array primary key of the table
+     **/     
+    public static function primaryKey()
+    {
+        return array('id');
+    }
+ 
+    /**
+     * @return array customized attribute labels (name=>label)
+     */
+    public function attributeLabels()
+    {
+        return array(
+            'id' => 'ID',
+            'username' => 'Title',
+            'content' => 'Content'
+        );
+    }
 
 	public static function findIdentity($id)
 	{
-		return isset(self::$users[$id]) ? new self(self::$users[$id]) : null;
+		return self::find($id);
 	}
 
 	public static function findByUsername($username)
 	{
-		foreach (self::$users as $user) {
-			if (strcasecmp($user['username'], $username) === 0) {
-				return new self($user);
-			}
-		}
-		return null;
+		return self::find()->by('username = :username',array(':username'=>$username));
 	}
 
 	public function getId()
@@ -58,4 +76,5 @@ class User extends \yii\base\Object implements \yii\web\Identity
 	{
 		return $this->password === $password;
 	}
+
 }

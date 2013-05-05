@@ -4,6 +4,10 @@
  */
 $this->title = 'Welcome';
 ?>
+
+<?php
+	var_dump($data);
+?>
 <div class="jumbotron">
 	<h1>Welcome!</h1>
 

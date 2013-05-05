@@ -1,6 +1,8 @@
 <?php
 
+use yii\base\HttpException;
 use yii\web\Controller;
+use app\models\User;
 use app\models\LoginForm;
 use app\models\ContactForm;
 
@@ -8,7 +10,8 @@ class SiteController extends Controller
 {
 	public function actionIndex()
 	{
-		echo $this->render('index');
+		$data = User::find()->all();
+		echo $this->render('index',array('data'=>$data));
 	}
 
 	public function actionLogin()

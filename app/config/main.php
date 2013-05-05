@@ -10,6 +10,7 @@ return array(
 			'password' => 'adm1n'
 		),*/
 	),
+
 	'components' => array(
 		'cache' => array(
 			'class' => 'yii\caching\FileCache',

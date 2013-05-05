@@ -10,9 +10,7 @@ return array(
 		),
 		'db' => array(
 			'class' => 'yii\db\Connection',
-			'dsn' => 'mysql:host=localhost;dbname=rps',
-			'username' => 'root',
-			'password' => '',
+			'dsn' => 'sqlite:./data/frenzelgmbh.db',
 		),
 		'user' => array(
 			'class' => 'yii\web\User',

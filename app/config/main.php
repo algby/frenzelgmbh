@@ -1,7 +1,7 @@
 <?php
 
 return array(
-	'id' => 'hello',
+	'id' => 'frenzelgmbh',
 	'basePath' => dirname(__DIR__),
 	'components' => array(
 		'cache' => array(
@@ -16,6 +16,6 @@ return array(
 		),
 	),
 	'params' => array(
-		'adminEmail' => 'admin@example.com',
+		'adminEmail' => 'philipp@frenzel.net',
 	),
 );

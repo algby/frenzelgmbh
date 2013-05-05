@@ -20,10 +20,27 @@
                     "reference": "master"
                 }
             }
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "yiiext/yiibooster",
+                "version": "1.0.6",
+                "source": {
+                    "url": "https://github.com/clevertech/YiiBooster.git",
+                    "type": "git",
+                    "reference": "master"
+                }
+            }
+        },
+        {
+            "type": "composer",
+            "url": "http://packages.phundament.com"
         }
     ],
     "minimum-stability": "dev",
     "require": {
-        "yiisoft/yii2": "dev-master"
+        "yiisoft/yii2": "dev-master",
+        "yiiext/yiibooster": "1.0.6"
     }
 }

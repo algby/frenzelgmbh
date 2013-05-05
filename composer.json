@@ -1,0 +1,29 @@
+{
+    "name": "frenzelgmbh",
+    "description": "Frenzel GmbH Web Site",
+    "license": "BSD",
+    "authors": [
+        {
+            "name": "Philipp Frenzel",
+            "email": "philipp@frenzel.net"
+        }
+    ],
+    "repositories": [
+        {
+            "type": "package",
+            "package": {
+                "name": "yiisoft/yii2",
+                "version": "master",
+                "source": {
+                    "url": "https://github.com/yiisoft/yii2.git",
+                    "type": "git",
+                    "reference": "master"
+                }
+            }
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "yiisoft/yii2": "dev-master"
+    }
+}

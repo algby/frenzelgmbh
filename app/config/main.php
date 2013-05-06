@@ -28,7 +28,7 @@ return array(
 		'assetManager' => array(
             'bundles' => require(__DIR__ . '/assets.php'),
             'converter'=>array(
-                'class'=>'assetparser\Converter',
+                'class'=>'app\..\vendor\yii-ext\assetparser\Converter',
                 'force'=>false
             )
         ),

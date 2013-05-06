@@ -3,3 +3,7 @@ composer.lock
 
 #ignore folders
 /vendor/*
+
+frenzelgmbh.sublime-project
+
+frenzelgmbh.sublime-workspace

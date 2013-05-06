@@ -35,6 +35,13 @@ class User extends \yii\db\ActiveRecord implements \yii\web\Identity
         return array('id');
     }
  
+ 	public function rules()
+	{
+	    return array(
+	        array('username, password', 'required'),
+	    );
+	}
+
     /**
      * @return array customized attribute labels (name=>label)
      */
@@ -43,6 +50,7 @@ class User extends \yii\db\ActiveRecord implements \yii\web\Identity
         return array(
             'id' => 'ID',
             'username' => 'Title',
+            'password' => 'Password',
             'content' => 'Content'
         );
     }
@@ -54,7 +62,7 @@ class User extends \yii\db\ActiveRecord implements \yii\web\Identity
 
 	public static function findByUsername($username)
 	{
-		return self::find()->by('username = :username',array(':username'=>$username));
+		return self::find()->where('username = :username',array(':username'=>$username));//)?self::find()->where('username = :username',array(':username'=>$username)):NULL;
 	}
 
 	public function getId()
@@ -74,7 +82,7 @@ class User extends \yii\db\ActiveRecord implements \yii\web\Identity
 
 	public function validatePassword($password)
 	{
-		return $this->password === $password;
+		return $this->password === md5($password);
 	}
 
 }

@@ -22,6 +22,18 @@
             }
         },
         {
+            "type":"package",
+            "package":{
+                "name":"yii-ext/assetparser",
+                "version":"master",
+                "source":{
+                    "url":"https://github.com/athos99/assetparser.git",
+                    "type":"git",
+                    "reference":"master"
+                }
+            }
+        },
+        {
             "type": "composer",
             "url": "http://packages.phundament.com"
         }
@@ -29,7 +41,8 @@
     "minimum-stability": "dev",
     "require": {
         "yiisoft/yii2": "dev-master",
-        "crisu83/yii-less": "dev-master",
+        "yii-ext/assetparser":"master",
+        "crisu83/yii-less": "dev-master",        
         "crisu83/yii-bootstrap": "dev-tip"
     }
 }

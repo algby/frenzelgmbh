@@ -26,8 +26,12 @@ return array(
 			'identityClass' => 'app\models\User',
 		),
 		'assetManager' => array(
-			'bundles' => require(__DIR__ . '/assets.php'),
-		),
+            'bundles' => require(__DIR__ . '/assets.php'),
+            'converter'=>array(
+                'class'=>'assetparser\Converter',
+                'force'=>false
+            )
+        ),
 	),
 	'params' => array(
 		'adminEmail' => 'philipp@frenzel.net',

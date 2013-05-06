@@ -14,7 +14,7 @@ $this->registerAssetBundle('app');
 	<title><?php echo Html::encode($this->title); ?></title>
 	<?php $this->head(); ?>
 </head>
-<body>
+<body class="metrouicss">
 <div class="container">
 	<?php $this->beginBody(); ?>
 	<div class="masthead">

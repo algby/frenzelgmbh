@@ -40,7 +40,7 @@ $this->registerAssetBundle('app');
 
 	<?php echo $content; ?>
 
-	<div class="footer bg-color-darken fg-color-white">
+	<div class="footer bg-color-blueDark fg-color-white">
 		<p>&copy; Frenzel GmbH <?php echo date('Y'); ?></p>
 		<p>
 			<?php echo Yii::powered(); ?>

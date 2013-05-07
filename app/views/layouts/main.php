@@ -21,20 +21,18 @@ $this->registerAssetBundle('app');
 	<div class="masthead">
 		<h3 class="muted">Frenzel GmbH</h3>
 
-		<div class="navbar">
-			<div class="navbar-inner">
-				<div class="container">
-					<ul class="nav">
-						<li><?php echo Html::a('Home', Yii::$app->homeUrl); ?></li>
-						<li><?php echo Html::a('About', array('/site/about')); ?></li>
-						<li><?php echo Html::a('Contact', array('/site/contact')); ?></li>
-						<?php if (Yii::$app->user->isGuest): ?>
-						<li><?php echo Html::a('Login', array('/site/login')); ?></li>
-						<?php else: ?>
-						<li><?php echo Html::a('Logout (' . Html::encode(Yii::$app->user->identity->username) . ')', array('/site/logout')); ?></li>
-						<?php endif; ?>
-					</ul>
-				</div>
+		<div class="nav-bar bg-color-blueDark">
+			<div class="nav-bar-inner">
+				<ul class="menu">
+					<li><?php echo Html::a('Home', Yii::$app->homeUrl); ?></li>
+					<li><?php echo Html::a('About', array('/site/about')); ?></li>
+					<li><?php echo Html::a('Contact', array('/site/contact')); ?></li>
+					<?php if (Yii::$app->user->isGuest): ?>
+					<li><?php echo Html::a('Login', array('/site/login')); ?></li>
+					<?php else: ?>
+					<li><?php echo Html::a('Logout (' . Html::encode(Yii::$app->user->identity->username) . ')', array('/site/logout')); ?></li>
+					<?php endif; ?>
+				</ul>				
 			</div>
 		</div>
 		<!-- /.navbar -->
@@ -42,13 +40,12 @@ $this->registerAssetBundle('app');
 
 	<?php echo $content; ?>
 
-	<hr>
-
-	<div class="footer">
+	<div class="footer bg-color-darken fg-color-white">
 		<p>&copy; Frenzel GmbH <?php echo date('Y'); ?></p>
 		<p>
 			<?php echo Yii::powered(); ?>
-			Template by <a href="http://twitter.github.io/bootstrap/">Twitter Bootstrap</a>
+			Template by <a href="http://twitter.github.io/bootstrap/">Twitter Bootstrap</a>.
+			Styles by <a href="http://metroui.org.ua/">Metro UI CSS</a>
 		</p>
 	</div>
 	<?php $this->endBody(); ?>

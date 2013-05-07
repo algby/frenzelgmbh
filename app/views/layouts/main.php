@@ -21,7 +21,7 @@ $this->registerAssetBundle('app');
 	<div class="masthead">
 		<h3 class="muted">Frenzel GmbH</h3>
 
-		<div class="nav-bar">
+		<div class="nav-bar bg-color-blueDark">
 			<div class="nav-bar-inner">
 				<ul class="menu">
 					<li><?php echo Html::a('Home', Yii::$app->homeUrl); ?></li>
@@ -40,9 +40,7 @@ $this->registerAssetBundle('app');
 
 	<?php echo $content; ?>
 
-	<hr>
-
-	<div class="footer">
+	<div class="footer bg-color-darken fg-color-white">
 		<p>&copy; Frenzel GmbH <?php echo date('Y'); ?></p>
 		<p>
 			<?php echo Yii::powered(); ?>

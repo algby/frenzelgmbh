@@ -5,8 +5,9 @@ body {
 
 /* Custom footer */
 .footer {
-	padding: 60px 0;
+	padding: 10px 0;
 	margin-top: 20px;
+	padding-left: 10px;
 }
 
 /* Custom container */

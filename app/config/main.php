@@ -3,7 +3,7 @@
 return array(
 	'id' => 'frenzelgmbh',
 	'basePath' => dirname(__DIR__),
-	'name' => 'Frenzel GmbH - Software Entwicklung, QlikView Consulting, Unternehmensplanung',
+	'name' => 'Frenzel GmbH - Software Entwicklung, QlikView Consulting, Unternehmensplanung, Corporate Planning',
 	'modules' => array(
 		/*'gii'=>array(
 			'class' => 'yii\components\gii',
@@ -25,11 +25,11 @@ return array(
 			'class' => 'yii\web\User',
 			'identityClass' => 'app\models\User',
 		),
-		'converter'=>array(
+		'assetManager'=>array(
                 'class'=>'vendor\yii_ext\assetparser\Converter',
                 'force'=>false,
                 'parsers' => array(
-                    /*'sass' => array( // file extension to parse
+                    'sass' => array( // file extension to parse
                         'class' => 'vendor\yii_ext\assetparser\Sass',
                         'output' => 'css', // parsed output file type
                         'options' => array(
@@ -40,7 +40,7 @@ return array(
                         'class' => 'vendor\yii_ext\assetparser\Sass',
                         'output' => 'css', // parsed output file type
                         'options' => array() // optional options
-                    ),*/
+                    ),
                     'less' => array( // file extension to parse
                         'class' => 'vendor\yii_ext\assetparser\Less',
                         'output' => 'css', // parsed output file type

@@ -11,7 +11,10 @@ return array(
             'less/modern.less',
         ),
         'js' => array(
- 
+            'js/start-menu.js',
+            'js/tile-drag.js',
+            'js/dropdown.js',
+            'js/bootstrap.js',
         ),
         'depends' => array(
             'yii',

@@ -26,6 +26,8 @@ return array(
 			'identityClass' => 'app\models\User',
 		),
 		'assetManager'=>array(
+			'bundles' => require(__DIR__ . '/assets.php'),
+			'converter'=>array(
                 'class'=>'vendor\yii_ext\assetparser\Converter',
                 'force'=>false,
                 'parsers' => array(
@@ -49,6 +51,7 @@ return array(
                         )
                     )
                 )
+			)
         )
 	),
 	'params' => array(

@@ -23,7 +23,7 @@ $this->title = 'Welcome';
 				condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod.
 				Donec sed odio dui. </p>
 
-			<p><a class="btn" href="#">View details &raquo;</a></p>
+			<p><a class="button" href="#">View details &raquo;</a></p>
 		</div>
 		<div class="span4">
 			<h2>Heading</h2>
@@ -32,7 +32,7 @@ $this->title = 'Welcome';
 				condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod.
 				Donec sed odio dui. </p>
 
-			<p><a class="btn" href="#">View details &raquo;</a></p>
+			<p><a class="button" href="#">View details &raquo;</a></p>
 		</div>
 		<div class="span4">
 			<h2>Heading</h2>
@@ -41,7 +41,7 @@ $this->title = 'Welcome';
 				felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum
 				massa.</p>
 
-			<p><a class="btn" href="#">View details &raquo;</a></p>
+			<p><a class="button" href="#">View details &raquo;</a></p>
 		</div>
 	</div>
 </section>

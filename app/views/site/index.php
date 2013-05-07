@@ -52,6 +52,12 @@ $this->title = 'Welcome';
 		    	<span class="name">Yii2 Framework</span>
 		    </div>
 	    </div>
+	    <div class="tile double">
+			<div class="brand">
+				<div class="badge">10</div>
+				<div class="name">News</div>
+			</div>
+		</div>
 	</div>
 
 	<div class="jumbotron bg-color-blueLight">

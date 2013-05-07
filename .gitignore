@@ -10,3 +10,5 @@ frenzelgmbh.sublime-project
 frenzelgmbh.sublime-workspace
 
 .DS_Store
+
+web/less/modern.css

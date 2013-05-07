@@ -17,8 +17,36 @@ $this->title = 'Welcome';
 		    </div>
 	    </div>
 	    <div class="tile double bg-color-blue">
-		    <div class="tile-content">
-				<a class="button bg-color-green fg-color-white big" href="http://www.yiiframework.com">Get started with Yii2<i class="icon-arrow-right-3 right"></i></a>
+		    <div class="tile-content">		    	
+				<a class="button bg-color-green fg-color-white big" style="padding-top:10px;" href="http://www.yiiframework.com">Get started with Yii2<i class="icon-arrow-right-3 right"></i></a>			
+		    </div>
+		    <div class="brand">
+		    	<span class="name">Yii2 Framework</span>
+		    </div>
+	    </div>
+	    <div class="tile image">
+			<div class="tile-content">
+				<img src="http://lorempixel.com/200/200/sports/"/>
+			</div>
+		</div>
+		<div class="tile bg-color-green">
+			<div class="tile-content">
+				Lorem ipsum...
+			</div>
+		</div>
+		<div class="tile image">
+			<div class="tile-content">
+				<img src="http://lorempixel.com/200/200/fashion/"/>
+			</div>
+		</div>
+		<div class="tile image">
+			<div class="tile-content">
+				<img src="http://lorempixel.com/200/200/cats/"/>
+			</div>
+		</div>
+		<div class="tile double bg-color-red">
+		    <div class="tile-content">		    	
+				<a class="button bg-color-yellow fg-color-white big" style="padding-top:10px;" href="http://www.yiiframework.com">Get started with Yii2<i class="icon-arrow-right-3 right"></i></a>			
 		    </div>
 		    <div class="brand">
 		    	<span class="name">Yii2 Framework</span>

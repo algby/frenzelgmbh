@@ -28,23 +28,23 @@ return array(
 		'assetManager'=>array(
 			'bundles' => require(__DIR__ . '/assets.php'),
 			'converter'=>array(
-                'class'=>'vendor\yii_ext\assetparser\Converter',
+                'class'=>'app\extensions\assetparser\Converter',
                 'force'=>false,
                 'parsers' => array(
                     'sass' => array( // file extension to parse
-                        'class' => 'vendor\yii_ext\assetparser\Sass',
+                        'class' => 'app\extensions\assetparser\Sass',
                         'output' => 'css', // parsed output file type
                         'options' => array(
                             'cachePath' => '@app/runtime/cache/sass-parser' // optional options
                         ),
                     ),
                     'scss' => array( // file extension to parse
-                        'class' => 'vendor\yii_ext\assetparser\Sass',
+                        'class' => 'app\extensions\assetparser\Sass',
                         'output' => 'css', // parsed output file type
                         'options' => array() // optional options
                     ),
                     'less' => array( // file extension to parse
-                        'class' => 'vendor\yii_ext\assetparser\Less',
+                        'class' => 'app\extensions\assetparser\Less',
                         'output' => 'css', // parsed output file type
                         'options' => array(
                             'auto' => true // optional options

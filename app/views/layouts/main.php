@@ -25,7 +25,17 @@ $this->registerAssetBundle('app');
 			<div class="nav-bar-inner">
 				<ul class="menu">
 					<li><?php echo Html::a('Home', Yii::$app->homeUrl); ?></li>
-					<li><?php echo Html::a('About', array('/site/about')); ?></li>
+					<li class="divider"></li>
+
+					<li data-role="dropdown">
+						<a href="#">SubItem</a>
+						<ul class="dropdown-menu">
+							<?php echo Html::a('About', array('/site/about')); ?>
+							<li><a href="#">SubItem</a></li>
+						</ul>
+					</li>
+					
+					<li class="divider"></li>
 					<li><?php echo Html::a('Contact', array('/site/contact')); ?></li>
 					<?php if (Yii::$app->user->isGuest): ?>
 					<li><?php echo Html::a('Login', array('/site/login')); ?></li>

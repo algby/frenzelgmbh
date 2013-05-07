@@ -53,6 +53,9 @@ $this->title = 'Welcome';
 		    </div>
 	    </div>
 	    <div class="tile double">
+	    	<div class="tile-content">
+				<p>Preparing Website</p>
+			</div>
 			<div class="brand">
 				<div class="badge">10</div>
 				<div class="name">News</div>

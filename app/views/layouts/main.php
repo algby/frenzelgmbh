@@ -6,6 +6,7 @@
 use yii\helpers\Html;
 $this->registerAssetBundle('app');
 ?>
+
 <?php $this->beginPage(); ?>
 <!DOCTYPE html>
 <html lang="en">

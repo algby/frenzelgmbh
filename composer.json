@@ -13,7 +13,7 @@
             "type": "package",
             "package": {
                 "name": "yiisoft/yii2",
-                "version": "master",
+                "version": "0.0.1",
                 "source": {
                     "url": "https://github.com/yiisoft/yii2.git",
                     "type": "git",
@@ -25,7 +25,7 @@
             "type":"package",
             "package":{
                 "name":"yii_ext/assetparser",
-                "version":"1.0.2",
+                "version":"1.0.5",
                 "source":{
                     "url":"https://github.com/philippfrenzel/assetparser.git",
                     "type":"git",
@@ -40,8 +40,8 @@
     ],
     "minimum-stability": "dev",
     "require": {
-        "yiisoft/yii2": "dev-master",
-        "yii_ext/assetparser":"1.0.2",
+        "yiisoft/yii2": "0.0.1",
+        "yii_ext/assetparser":"1.0.5",
         "crisu83/yii-less": "dev-master",        
         "crisu83/yii-bootstrap": "dev-tip"
     }

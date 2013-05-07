@@ -7,7 +7,7 @@ use yii\helpers\Html;
  */
 $this->title = 'Login';
 ?>
-<h1><?php echo Html::encode($this->title); ?></h1>
+<h1><i class="icon-key"></i> <?php echo Html::encode($this->title); ?></h1>
 
 <p>Please fill out the following fields to login:</p>
 

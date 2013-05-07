@@ -9,3 +9,10 @@ Currently we are playing around with snippets from phundament (www.phundament.co
 Although very usefull is the framework tutorial where it's explained how to make a simple CRUD application...;)
 
 Feel free to discuss and/or contribute!
+
+
++ Credits
+
+* Metro UI CSS http://metroui.org.ua
+* Yii2 Framework http://www.yiiframework.com
+* assetparser extension athos99/assetparser

@@ -25,13 +25,31 @@ return array(
 			'class' => 'yii\web\User',
 			'identityClass' => 'app\models\User',
 		),
-		'assetManager' => array(
-            'bundles' => require(__DIR__ . '/assets.php'),
-            'converter'=>array(
-                'class'=>'app\..\vendor\yii-ext\assetparser\Converter',
-                'force'=>false
-            )
-        ),
+		'converter'=>array(
+                'class'=>'vendor\yii_ext\assetparser\Converter',
+                'force'=>false,
+                'parsers' => array(
+                    /*'sass' => array( // file extension to parse
+                        'class' => 'vendor\yii_ext\assetparser\Sass',
+                        'output' => 'css', // parsed output file type
+                        'options' => array(
+                            'cachePath' => '@app/runtime/cache/sass-parser' // optional options
+                        ),
+                    ),
+                    'scss' => array( // file extension to parse
+                        'class' => 'vendor\yii_ext\assetparser\Sass',
+                        'output' => 'css', // parsed output file type
+                        'options' => array() // optional options
+                    ),*/
+                    'less' => array( // file extension to parse
+                        'class' => 'vendor\yii_ext\assetparser\Less',
+                        'output' => 'css', // parsed output file type
+                        'options' => array(
+                            'auto' => true // optional options
+                        )
+                    )
+                )
+        )
 	),
 	'params' => array(
 		'adminEmail' => 'philipp@frenzel.net',

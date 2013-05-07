@@ -11,7 +11,7 @@ Although very usefull is the framework tutorial where it's explained how to make
 Feel free to discuss and/or contribute!
 
 
-+ Credits
+- Credits
 
 * Metro UI CSS http://metroui.org.ua
 * Yii2 Framework http://www.yiiframework.com

@@ -24,7 +24,7 @@
         {
             "type":"package",
             "package":{
-                "name":"yii_ext/assetparser",
+                "name":"yiiext/assetparser",
                 "version":"1.0.7",
                 "authors": [
                     {
@@ -50,6 +50,6 @@
     "minimum-stability": "dev",
     "require": {
         "yiisoft/yii2": "0.0.1",
-        "yii_ext/assetparser":"1.0.7"        
+        "yiiext/assetparser":"1.0.7"        
     }
 }

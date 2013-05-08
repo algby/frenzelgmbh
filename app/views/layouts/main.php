@@ -40,7 +40,7 @@ $this->registerAssetBundle('app');
 					<li data-role="dropdown">
 						<a href="#">Development</a>
 						<ul class="dropdown-menu">
-							<li><?php echo Html::a('Development', array('/site/about')); ?></li>
+							<li><?php echo Html::a('Web Solutions', array('/site/view','page'=>'page_webdevelopment')); ?></li>
 							<li><?php echo Html::a('Services', array('/site/about')); ?></li>
 						</ul>
 					</li>

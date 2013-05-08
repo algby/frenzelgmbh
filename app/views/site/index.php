@@ -72,7 +72,7 @@ $this->title = 'Welcome';
 				Since 1996 we support several companies in their business planning process and financial reporting.
 				Based upon the fact - <b>keep the solution small and simple</b> - we implemented many successfull solutions
 				(most of them are still running) and learned how to satisfy all the needs by different stakeholders.
-				Today we are using powerful tools like QlikView, Planlogiq and others to provide our customers with
+				Today we are using powerful tools like <b>QlikView, Planlogiq</b> and others to provide our customers with
 				an uptodate intime reporting.
 			</p>
 
@@ -95,9 +95,11 @@ $this->title = 'Welcome';
 		<div class="span4">
 			<h2>Services</h2>
 
-			<p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta
-				felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum
-				massa.</p>
+			<p>
+				<a href="http://www.restrictedpartyscreening.org">Restricted Party Screening ORG</a> is our denied person/party
+				screening service which allows you to keep your trade compliance. Take care about world sanctions and identify 
+				possible risks in your business relations.
+			</p>
 
 			<p><a class="button" href="#">View details &raquo;</a></p>
 		</div>

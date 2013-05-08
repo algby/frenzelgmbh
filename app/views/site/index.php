@@ -67,25 +67,33 @@ $this->title = 'Welcome';
 
 	<div class="row-fluid">
 		<div class="span4">
-			<h2>Heading</h2>
+			<h2>Consulting</h2>
+			<p>
+				Since 1996 we support several companies in their business planning process and financial reporting.
+				Based upon the fact - <b>keep the solution small and simple</b> - we implemented many successfull solutions
+				(most of them are still running) and learned how to satisfy all the needs by different stakeholders.
+				Today we are using powerful tools like QlikView, Planlogiq and others to provide our customers with
+				an uptodate intime reporting.
+			</p>
 
-			<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris
-				condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod.
-				Donec sed odio dui. </p>
-
-			<p><a class="button" href="#">View details &raquo;</a></p>
+			<p><a class="button" href="#">Consulting details &raquo;</a></p>
 		</div>
 		<div class="span4">
-			<h2>Heading</h2>
+			<h2>Coding</h2>
 
-			<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris
-				condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod.
-				Donec sed odio dui. </p>
+			<p>
+				Around 1989 everything started with our first so called "PC" - a Schneider PC ;) - and since that time,
+				computing wasn't just to use a computer. We started application development on low level languages like 
+				Basic. Database Languages like DBase and so on. Today we deliver solutions based upon <b>PHP, C#, MSSQL, MYSQL</b>
+				Today we develop our solutions using <b>SCRUM</b> which means a running protoype is the best to continue
+				with production releases.
+				Check out our success stories to find out more!
+			</p>
 
-			<p><a class="button" href="#">View details &raquo;</a></p>
+			<p><a class="button" href="#">Success Stories &raquo;</a></p>
 		</div>
 		<div class="span4">
-			<h2>Heading</h2>
+			<h2>Services</h2>
 
 			<p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta
 				felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum

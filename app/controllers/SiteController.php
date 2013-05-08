@@ -8,9 +8,16 @@ use app\models\ContactForm;
 
 class SiteController extends Controller
 {
+
 	public function actionIndex()
 	{
 		echo $this->render('index');
+	}
+
+	public function actionView($page=NULL){
+		echo $this->render('page',array(
+			'view'=>$page,
+		));
 	}
 
 	public function actionLogin()

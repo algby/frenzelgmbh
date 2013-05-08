@@ -28,10 +28,30 @@ $this->registerAssetBundle('app');
 					<li class="divider"></li>
 
 					<li data-role="dropdown">
-						<a href="#">SubItem</a>
+						<a href="#">Consulting</a>
 						<ul class="dropdown-menu">
-							<?php echo Html::a('About', array('/site/about')); ?>
+							<li><?php echo Html::a('About', array('/site/about')); ?></li>
 							<li><a href="#">SubItem</a></li>
+						</ul>
+					</li>
+					
+					<li class="divider"></li>
+
+					<li data-role="dropdown">
+						<a href="#">Development</a>
+						<ul class="dropdown-menu">
+							<li><?php echo Html::a('Development', array('/site/about')); ?></li>
+							<li><?php echo Html::a('Services', array('/site/about')); ?></li>
+						</ul>
+					</li>
+					
+					<li class="divider"></li>
+
+					<li data-role="dropdown">
+						<a href="#">Solutions</a>
+						<ul class="dropdown-menu">
+							<li><?php echo Html::a('Development', array('/site/about')); ?></li>
+							<li><?php echo Html::a('Services', array('/site/about')); ?></li>
 						</ul>
 					</li>
 					

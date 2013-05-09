@@ -22,7 +22,7 @@ return array(
 		),
 		'user' => array(
 			'class' => 'yii\web\User',
-			'identityClass' => 'app\models\User',
+			'identityClass' => 'app\components\UserIdentity',
 		),
 		'log' => array(
 			'class' => 'yii\logging\Router',

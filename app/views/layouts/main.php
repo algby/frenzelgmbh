@@ -30,8 +30,10 @@ $this->registerAssetBundle('app');
 					<li data-role="dropdown">
 						<a href="#">Consulting</a>
 						<ul class="dropdown-menu">
-							<li><?php echo Html::a('About', array('/site/about')); ?></li>
-							<li><a href="#">SubItem</a></li>
+							<li><?php echo Html::a('QlikView', array('/site/view','page'=>'page_qlikview')); ?></li>
+							<li><?php echo Html::a('Corporate Business Planning', array('/site/view','page'=>'page_cpb')); ?></li>
+							<li><?php echo Html::a('Data Design', array('/site/view','page'=>'page_cpb')); ?></li>
+							<li><?php echo Html::a('Data Quality', array('/site/view','page'=>'page_cpb')); ?></li>
 						</ul>
 					</li>
 					
@@ -40,8 +42,9 @@ $this->registerAssetBundle('app');
 					<li data-role="dropdown">
 						<a href="#">Development</a>
 						<ul class="dropdown-menu">
-							<li><?php echo Html::a('Web Solutions', array('/site/view','page'=>'page_webdevelopment')); ?></li>
-							<li><?php echo Html::a('Services', array('/site/about')); ?></li>
+							<li><?php echo Html::a('Web Design', array('/site/view','page'=>'page_webdevelopment')); ?></li>
+							<li><?php echo Html::a('Web Coding', array('/site/view','page'=>'page_webcoding')); ?></li>
+							<li><?php echo Html::a('Individual Software', array('/site/view','page'=>'page_individualsoftware')); ?></li>
 						</ul>
 					</li>
 					
@@ -50,8 +53,10 @@ $this->registerAssetBundle('app');
 					<li data-role="dropdown">
 						<a href="#">Solutions</a>
 						<ul class="dropdown-menu">
-							<li><?php echo Html::a('Development', array('/site/about')); ?></li>
-							<li><?php echo Html::a('Services', array('/site/about')); ?></li>
+							<li><?php echo Html::a('Corporate Planning', array('/site/view','page'=>'page_corporateplanning')); ?></li>
+							<li><?php echo Html::a('Denied Party Screening', array('/site/view','page'=>'page_deniedparties')); ?></li>
+							<li><?php echo Html::a('Weasy', array('/site/view','page'=>'page_weasy')); ?></li>
+							<li><?php echo Html::a('HTV', array('/site/view','page'=>'page_htv')); ?></li>
 						</ul>
 					</li>
 					

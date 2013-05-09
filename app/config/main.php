@@ -4,13 +4,12 @@ return array(
 	'id' => 'frenzelgmbh',
 	'basePath' => dirname(__DIR__),
 	'name' => 'Frenzel GmbH - Software Entwicklung, QlikView Consulting, Unternehmensplanung, Corporate Planning',
+	'preload' => array('log'),
 	'modules' => array(
-		/*'gii'=>array(
-			'class' => 'yii\components\gii',
-			'password' => 'adm1n'
-		),*/
+		'debug' => array(
+			'class' => 'yii\debug\Module',
+		)
 	),
-
 	'components' => array(
 		'cache' => array(
 			'class' => 'yii\caching\FileCache',
@@ -24,6 +23,15 @@ return array(
 		'user' => array(
 			'class' => 'yii\web\User',
 			'identityClass' => 'app\models\User',
+		),
+		'log' => array(
+			'class' => 'yii\logging\Router',
+			'targets' => array(
+				'file' => array(
+					'class' => 'yii\logging\FileTarget',
+					'levels' => array('error', 'warning'),
+				),
+			),
 		),
 		'assetManager'=>array(
 			'bundles' => require(__DIR__ . '/assets.php'),

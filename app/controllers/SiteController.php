@@ -16,18 +16,15 @@ class SiteController extends Controller
 			'captcha' => array(
 				'class' => 'yii\web\CaptchaAction',
 			),
+			'page' => array(
+				'class' => 'app\actions\ViewAction',
+			),
 		);
 	}
 
 	public function actionIndex()
 	{
 		echo $this->render('index');
-	}
-
-	public function actionView($page=NULL){
-		echo $this->render('page',array(
-			'view'=>$page,
-		));
 	}
 
 	public function actionLogin()

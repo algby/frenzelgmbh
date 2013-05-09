@@ -19,5 +19,5 @@ return array(
         'depends' => array(
             'yii',
         ),
-    ),
+    ) 
 );

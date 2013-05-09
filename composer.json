@@ -22,6 +22,24 @@
             }
         },
         {
+            "type": "package",
+            "package": {
+                "name": "yiiext/yiimetroui",
+                "version": "0.0.1",
+                "authors": [
+                    {
+                        "name": "Philipp Frenzel",
+                        "homepage": "http://frenzel.net"
+                    }
+                ],
+                "source": {
+                    "url": "https://github.com/philippfrenzel/yiimetroui.git",
+                    "type": "git",
+                    "reference": "master"
+                }
+            }
+        },
+        {
             "type":"package",
             "package":{
                 "name":"yiiext/assetparser",
@@ -50,6 +68,7 @@
     "minimum-stability": "dev",
     "require": {
         "yiisoft/yii2": ">0.0.2",
-        "yiiext/assetparser":"1.0.7"        
+        "yiiext/assetparser":"1.0.7",
+        "yiiext/yiimetroui":">0.0.0"         
     }
 }

@@ -2,12 +2,22 @@
 
 use yii\base\HttpException;
 use yii\web\Controller;
+
 use app\models\User;
 use app\models\LoginForm;
 use app\models\ContactForm;
 
 class SiteController extends Controller
 {
+	
+	public function actions()
+	{
+		return array(
+			'captcha' => array(
+				'class' => 'yii\web\CaptchaAction',
+			),
+		);
+	}
 
 	public function actionIndex()
 	{

@@ -2,6 +2,8 @@
 /**
  * @var yii\base\View $this
  */
+use \app\models\Messages;
+
 $this->title = 'Welcome';
 ?>
 
@@ -54,7 +56,8 @@ $this->title = 'Welcome';
 	    </div>
 	    <div class="tile double">
 	    	<div class="tile-content">
-				<p>Preparing Website</p>
+				<h4><?php echo Messages::find(1)->subject; ?></h4>
+				<p><?php echo Messages::find(1)->body; ?></p>
 			</div>
 			<div class="brand">
 				<div class="badge">10</div>

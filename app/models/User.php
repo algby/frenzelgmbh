@@ -21,7 +21,7 @@ class User extends ActiveRecord
      */
     public static function tableName()
     {
-        return 'tbl_user';
+        return '{{%user}}';
     }
  
     /**

@@ -21,8 +21,9 @@ return array(
             'password' => '',
 		),*/
 		'db' => array(
-			'class' => 'yii\db\Connection',
-			'dsn' => 'sqlite:'.dirname(__DIR__).'/data/frenzelgmbh.db',
+			'class'     => 'yii\db\Connection',
+			'dsn'       => 'sqlite:'.dirname(__DIR__).'/data/frenzelgmbh.db',
+			'tablePrefix' => 'tbl_',
 		),
 		'user' => array(
 			'class' => 'yii\web\User',

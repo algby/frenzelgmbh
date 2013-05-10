@@ -100,4 +100,18 @@ class MyHtml extends Html
 		return static::textarea($name, $value, $options);
 	}
 
+	/**
+	* Generates a password input field.
+	* @param string $name the name attribute.
+	* @param string $value the value attribute. If it is null, the value attribute will not be generated.
+	* @param array $options the tag options in terms of name-value pairs. These will be rendered as
+	* the attributes of the resulting tag. The values will be HTML-encoded using [[encode()]].
+	* If a value is null, the corresponding attribute will not be rendered.
+	* @return string the generated button tag
+	*/
+	public static function passwordInput($name, $value = null, $options = array())
+	{
+		return '<div class="input-control password">'.static::input('password', $name, $value, $options).'</div>';
+	}
+
 }

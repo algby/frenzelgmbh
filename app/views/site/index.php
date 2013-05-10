@@ -31,7 +31,8 @@ $this->title = 'Welcome';
 				<img src="http://lorempixel.com/200/200/sports/"/>
 			</div>
 		</div>
-		<div class="tile bg-color-green">
+		<div class="tile bg-color-green icon selected">
+			<b class="check"></b>
 			<div class="tile-content">
 				Lorem ipsum...
 			</div>
@@ -56,7 +57,7 @@ $this->title = 'Welcome';
 	    </div>
 	    <div class="tile double">
 	    	<div class="tile-content">
-				<h4><?php echo Messages::find(1)->subject; ?></h4>
+				<h3 style="margin-bottom: 5px;"><?php echo Messages::find(1)->subject; ?></h3>
 				<p><?php echo Messages::find(1)->body; ?></p>
 			</div>
 			<div class="brand">

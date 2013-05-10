@@ -27,4 +27,18 @@ class MyActiveField extends ActiveField
 		return $this->render(MyHtml::activeTextarea($this->model, $this->attribute, $options));
 	}
 
+	/**
+	* Generates a password input tag for the given model attribute.
+	* This method will generate the "name" and "value" tag attributes automatically for the model attribute
+	* unless they are explicitly specified in `$options`.
+	* @param array $options the tag options in terms of name-value pairs. These will be rendered as
+	* the attributes of the resulting tag. The values will be HTML-encoded using [[encode()]].
+	* @return string the generated input tag
+	*/
+	public function passwordInput($options = array())
+	{
+		$options = array_merge($this->inputOptions, $options);
+		return $this->render(MyHtml::activePasswordInput($this->model, $this->attribute, $options));
+	}
+
 }

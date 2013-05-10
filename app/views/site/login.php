@@ -13,7 +13,12 @@ $this->title = 'Login';
 
 	<p>Please fill out the following fields to login:</p>
 
-	<?php $form = $this->beginWidget('yii\widgets\ActiveForm', array('options' => array('class' => 'form-horizontal'))); ?>
+	<?php $form = $this->beginWidget('yii\widgets\ActiveForm', array('options' => array('class' => 'form-horizontal'),
+		'fieldConfig' => array(
+			'class' => 'app\components\MyActiveField'
+		)
+	)); 
+	?>
 		<?php echo $form->field($model, 'username')->textInput(); ?>
 		<?php echo $form->field($model, 'password')->passwordInput(); ?>
 		<?php echo $form->field($model, 'rememberMe')->checkbox(); ?>

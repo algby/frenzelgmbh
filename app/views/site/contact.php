@@ -41,7 +41,9 @@ $this->title = 'Contact';
 			echo $field->begin();
 			echo $field->label();
 			$this->widget(Captcha::className());
-			echo MyHtml::activeTextInput($model, 'verifyCode', array('class' => 'medium'));
+			echo "<div class='span4'>";
+			echo MyHtml::activeTextInput($model, 'verifyCode',array());
+			echo "</div>";
 			echo $field->error();
 			echo $field->end();
 		?>

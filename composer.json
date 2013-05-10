@@ -13,7 +13,7 @@
             "type": "package",
             "package": {
                 "name": "yiisoft/yii2",
-                "version": "0.0.4",
+                "version": "0.0.5",
                 "source": {
                     "url": "https://github.com/yiisoft/yii2.git",
                     "type": "git",

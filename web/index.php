@@ -2,7 +2,7 @@
 // comment out the following line to disable debug mode
 defined('YII_DEBUG') or define('YII_DEBUG', true);
 
-$frameworkPath = __DIR__ . '/../yii/vendor/yiisoft/yii2/framework';
+$frameworkPath = __DIR__ . '/../yii/vendor/yiisoft/yii2/yii';
 
 require($frameworkPath . '/Yii.php');
 // Register Composer autoloader

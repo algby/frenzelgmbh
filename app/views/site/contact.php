@@ -1,5 +1,6 @@
 <?php
 use yii\helpers\Html;
+use app\components\MyHtml;
 use yii\widgets\ActiveForm;
 use yii\widgets\Captcha;
 
@@ -27,7 +28,9 @@ $this->title = 'Contact';
 
 	<?php $form = $this->beginWidget(ActiveForm::className(), array(
 		'options' => array('class' => 'form-horizontal'),
-		'fieldConfig' => array('inputOptions' => array('class' => 'input-xlarge')),
+		'fieldConfig' => array(
+			'class' => 'app\components\MyActiveField'
+		),
 	)); ?>
 		<?php echo $form->field($model, 'name')->textInput(); ?>
 		<?php echo $form->field($model, 'email')->textInput(); ?>
@@ -38,7 +41,7 @@ $this->title = 'Contact';
 			echo $field->begin();
 			echo $field->label();
 			$this->widget(Captcha::className());
-			echo Html::activeTextInput($model, 'verifyCode', array('class' => 'input-medium'));
+			echo MyHtml::activeTextInput($model, 'verifyCode', array('class' => 'medium'));
 			echo $field->error();
 			echo $field->end();
 		?>

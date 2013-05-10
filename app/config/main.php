@@ -14,11 +14,15 @@ return array(
 		'cache' => array(
 			'class' => 'yii\caching\FileCache',
 		),
-		'db' => array(
+		/*'db' => array(
 			'class' => 'yii\db\Connection',
 			'dsn' => 'mysql:host=localhost;dbname=test',
             'username' => 'root', 
             'password' => '',
+		),*/
+		'db' => array(
+			'class' => 'yii\db\Connection',
+			'dsn' => 'sqlite:'.dirname(__DIR__).'/data/frenzelgmbh.db',
 		),
 		'user' => array(
 			'class' => 'yii\web\User',

@@ -18,3 +18,4 @@ Credits
 * Yii2 Framework http://www.yiiframework.com
 * assetparser extension athos99/assetparser
 * phundament http://www.phundament.com
+* Yii Blog2.0 by netyum https://github.com/netyum/blog2.0

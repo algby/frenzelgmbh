@@ -3,7 +3,7 @@
 return array(
 	'id' => 'frenzelgmbhconsole',
 	'basePath' => dirname(__DIR__),
-	'controllerPath' => '@console/controllers',
+	'controllerPath' => '@app/controllers',
 	'preload' => array('log'),
 	'components' => array(
 		/*'db' => array(

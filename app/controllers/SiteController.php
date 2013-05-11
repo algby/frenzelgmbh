@@ -1,7 +1,7 @@
 <?php
 
-use yii\base\HttpException;
-use yii\web\Controller;
+use \yii\base\HttpException;
+use \yii\web\Controller;
 
 use app\models\User;
 use app\models\LoginForm;

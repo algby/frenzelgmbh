@@ -1,7 +1,7 @@
 <?php
 use \yii\web\Controller;
 use \yii\web\Pagination;
-use yii\base\HttpException;
+use \yii\base\HttpException;
 
 use app\models\Messages;
 

@@ -3,6 +3,7 @@
  * @var yii\base\View $this
  */
 use \app\models\Messages;
+use \yii\helpers\Html;
 
 $this->title = 'Welcome';
 ?>
@@ -94,7 +95,7 @@ $this->title = 'Welcome';
 				Check out our success stories to find out more!
 			</p>
 
-			<p><a class="button" href="#">Success Stories &raquo;</a></p>
+			<p><?php echo Html::a('Coding details &raquo;', array('/site/page','view'=>'page_webcoding'),array('class'=>'button')); ?></p>
 		</div>
 		<div class="span4">
 			<h2>Services</h2>

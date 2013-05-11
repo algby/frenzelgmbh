@@ -53,7 +53,7 @@ class ViewAction extends Action
 	 * Defaults to null, meaning the controller's layout will be used.
 	 * If false, no layout will be applied.
 	 */
-	public $layout;
+	public $layout = 'column2';
 
 	private $_viewPath;
 

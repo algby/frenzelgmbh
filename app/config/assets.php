@@ -15,6 +15,7 @@ return array(
             'js/dropdown.js',
             'js/bootstrap.js',
             'js/pagecontrol.js',
+            'js/accordion.js',
         ),
         'depends' => array(
             'yii',

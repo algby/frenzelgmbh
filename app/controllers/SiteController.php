@@ -17,7 +17,7 @@ class SiteController extends Controller
 				'class' => 'yii\web\CaptchaAction',
 			),
 			'page' => array(
-				'class' => 'app\actions\ViewAction',
+				'class' => 'app\actions\ViewAction',				
 			),
 		);
 	}

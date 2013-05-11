@@ -5,7 +5,7 @@ $this->params['breadcrumbs']=array(
 ?>
 <h1>Create Message</h1>
 
-<?php $this->beginWidget('app\components\MyClipWidget', array('id'=>'sidebar')); ?>
+<?php $this->beginWidget('\yii\widgets\Block', array('id'=>'sidebar')); ?>
 	<ul>
 		<li><a href="#">Test</a></li>
 		<li class="sticker sticker-color-blue"><a>Item</a></li>

@@ -10,13 +10,8 @@ $this->beginContent('@app/views/layouts/main.php'); ?>
 	<div class="container-fluid">
 	  <div class="row-fluid">
 	  	 <div class="span3">
-	  	 	<div class="page-sidebar">
-	  	 		<ul>
-	  	 			<li><a href="#">Test</a></li>
-	  	 			<li class="sticker sticker-color-blue"><a>Item</a></li>
-	  	 			<li><a><i class="icon-cube"></i>Item</a></li>
-	  	 		</ul>
-	  	 		<?php echo $this->clips['sidebar']; ?>
+	  	 	<div class="page-sidebar">	  	 		
+	  	 		<?php echo $this->blocks['sidebar']; ?>
 	  	 	</div>      
 	    </div>
 	    <div class="span9">

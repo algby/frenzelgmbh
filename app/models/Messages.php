@@ -82,7 +82,7 @@ class Messages extends ActiveRecord
 			'sender_id' => 'Sender',
 			'reciever_id' => 'Receiver',
 			'subject' => 'Subject',
-			'body' => 'Body',
+			'msg_body' => 'Body',
 			'is_read' => 'Is Read',
 			'deleted_by' => 'Deleted By',
 			'creation_date' => 'Created At',

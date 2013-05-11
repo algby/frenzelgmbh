@@ -10,13 +10,14 @@ defined('YII_DEBUG') or define('YII_DEBUG', true);
 
 // fcgi doesn't have STDIN defined by default
 defined('STDIN') or define('STDIN', fopen('php://stdin', 'r'));
-$frameworkPath = __DIR__ . '/../yii/vendor/yiisoft/yii2/yii';
 
-require($frameworkPath . '/Yii.php');
+$frameworkPath = __DIR__ . '/../vendor';
+
+require($frameworkPath . '/yiisoft/yii2/yii/Yii.php');
 // Register Composer autoloader
-@include($frameworkPath . '/vendor/autoload.php');
+@include($frameworkPath . '/autoload.php');
 
-$config = require(__DIR__ . '/config/console.php');
+$config = require(__DIR__ . '/../app/config/console.php');
 
 $application = new yii\console\Application($config);
 $application->run();

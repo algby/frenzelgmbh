@@ -53,6 +53,7 @@ class Messages extends ActiveRecord
 			array('reciever_id', 'required'),
 			array('reciever_id', 'integer'),
 			array('subject', 'required'),
+			array('msg_body','string'),
 			array('subject', 'string', 'max'=>256),
 			array('is_read', 'string', 'max'=>1),
 		);

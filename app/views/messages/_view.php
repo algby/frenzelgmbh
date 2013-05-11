@@ -2,10 +2,9 @@
 use \yii\helpers\Html;
 
 ?>
-<div class="row-fluid">
-	<div class="page-header">
-		<h1><?php Html::encode($data->subject); ?></h1>
-	</div>
+
+<div class="row-fluid">	
+	<h4><?php echo Html::encode($data->subject); ?></h4>
 	<?php
 		echo $data->body;
 	?>

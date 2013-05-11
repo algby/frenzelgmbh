@@ -1,7 +1,6 @@
 <?php
 use \yii\helpers\Html;
-
-use app\widgets\LinkPager;
+use \yii\widgets\LinkPager;
 
 use app\models\Lookup;
 

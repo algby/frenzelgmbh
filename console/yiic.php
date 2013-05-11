@@ -17,7 +17,6 @@ require($frameworkPath . '/yiisoft/yii2/yii/Yii.php');
 // Register Composer autoloader
 @include($frameworkPath . '/autoload.php');
 
-$config = require(__DIR__ . '/../app/config/console.php');
-
+$config = require(__DIR__ . '/../console/config/console.php');
 $application = new yii\console\Application($config);
 $application->run();

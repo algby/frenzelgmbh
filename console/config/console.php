@@ -3,7 +3,7 @@
 return array(
 	'id' => 'frenzelgmbhconsole',
 	'basePath' => dirname(__DIR__),
-	'controllerPath' => '@app/commands',
+	'controllerPath' => '@console/controllers',
 	'preload' => array('log'),
 	'components' => array(
 		/*'db' => array(
@@ -14,7 +14,7 @@ return array(
 		),*/
 		'db' => array(
 			'class' => 'yii\db\Connection',
-			'dsn' => 'sqlite:'.dirname(__DIR__).'/data/frenzelgmbh.db',
+			'dsn' => 'sqlite:'.dirname(__DIR__).'/../app/data/frenzelgmbh.db',
 		),
 		'log' => array(
 			'class' => 'yii\logging\Router',

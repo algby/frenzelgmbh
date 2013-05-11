@@ -68,9 +68,6 @@
     "config": {
         "vendor-dir": "vendor"
     },
-    "bin": [
-        "yii/yiic"
-    ],
     "minimum-stability": "dev",
     "require": {
         "php": ">=5.3.0",

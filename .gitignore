@@ -12,3 +12,5 @@ frenzelgmbh.sublime-workspace
 .DS_Store
 
 web/less/modern.css
+
+console/runtime/logs/app.log

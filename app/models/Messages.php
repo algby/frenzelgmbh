@@ -61,7 +61,7 @@ class Messages extends ActiveRecord
 
 
 	/**
-	* @return model \app\models\user 
+	* @return model \app\models\user reciever
 	*/
 
 	public function getReciever(){
@@ -69,7 +69,7 @@ class Messages extends ActiveRecord
 	}
 
 	/**
-	* @return model \app\models\user 
+	* @return model \app\models\user sender
 	*/
 	
 	public function getSender(){

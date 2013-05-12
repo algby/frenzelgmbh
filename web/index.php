@@ -2,11 +2,11 @@
 // comment out the following line to disable debug mode
 defined('YII_DEBUG') or define('YII_DEBUG', true);
 
-$frameworkPath = __DIR__ . '/../vendor';
+$frameworkPath = __DIR__ . '/../vendor/yiisoft/yii2/yii';
 
-require($frameworkPath . '/yiisoft/yii2/yii/Yii.php');
+require($frameworkPath . '/Yii.php');
 // Register Composer autoloader
-@include($frameworkPath . '/autoload.php');
+@include(__DIR__ . '/../vendor/autoload.php');
 
 Yii::$classMap['app\extensions\assetparser\Converter'] =__DIR__ . '/../vendor/yiiext/assetparser/Converter.php';
 Yii::$classMap['app\extensions\assetparser\Parser'] =__DIR__ . '/../vendor/yiiext/assetparser/Parser.php';

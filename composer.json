@@ -13,7 +13,7 @@
             "type": "package",
             "package": {
                 "name": "yiisoft/yii2",
-                "version": "master",
+                "version": "0.0.1",
                 "source": {
                     "url": "https://github.com/yiisoft/yii2.git",
                     "type": "git",
@@ -75,7 +75,7 @@
         "twig/twig": "1.12.*",
         "smarty/smarty": "3.1.*",
         "ezyang/htmlpurifier": "v4.5.0",
-        "yiisoft/yii2": "master",
+        "yiisoft/yii2": ">0.0.0",
         "yiiext/assetparser":"1.0.7",
         "yiiext/yiimetroui":">0.0.0"         
     }

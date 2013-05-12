@@ -65,7 +65,7 @@ class SeedController extends Controller
 		$tx = $this->db->beginTransaction();
 		try
 		{
-			//$this->seed();
+			$this->seed();
 			$tx->commit();
 		}
 		catch (Exception $e)

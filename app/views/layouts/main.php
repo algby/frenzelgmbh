@@ -45,6 +45,7 @@ $this->registerAssetBundle('app');
 							<li><?php echo Html::a('Web Design', array('/site/page','view'=>'page_webdevelopment')); ?></li>
 							<li><?php echo Html::a('Web Coding', array('/site/page','view'=>'page_webcoding')); ?></li>
 							<li><?php echo Html::a('Individual Software', array('/site/page','view'=>'page_individualsoftware')); ?></li>
+							<li><?php echo Html::a('Playground::Messages', array('/messages')); ?></li>
 						</ul>
 					</li>
 					

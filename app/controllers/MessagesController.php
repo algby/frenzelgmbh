@@ -10,6 +10,11 @@ class MessagesController extends Controller
 	public $layout='column2';
 
 	/**
+	* @var string the default command action.
+	*/
+	public $defaultAction = 'index';
+
+	/**
 	 * @var CActiveRecord the currently loaded data model instance.
 	 */
 	private $_model;
@@ -46,6 +51,7 @@ class MessagesController extends Controller
 
 	public function actionCreate()
 	{
+		$this->layout = 'column1';
 		$model=new Messages();
 		if ($this->populate($_POST, $model) && $model->save()) {
 			Yii::$app->response->redirect(array('view','id'=>$model->id));

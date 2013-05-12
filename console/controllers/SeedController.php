@@ -79,9 +79,9 @@ class SeedController extends Controller
 	 * Seeds the database according to the array defined within the method
 	 * array('fixtureName' => ActiveRecordClassName)
 	 */
-	/*protected function seed()
+	protected function seed()
 	{
-		Yii::app()->seeder->prepare();
-	}*/
+		Yii::$app->getComponent('seeder')->prepare();
+	}
 }
 

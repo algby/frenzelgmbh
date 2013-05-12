@@ -62,8 +62,6 @@ class SeedController extends Controller
 	 */
 	public function actionSeed()
 	{
-		echo "Seed It";
-		/*
 		$tx = $this->db->beginTransaction();
 		try
 		{
@@ -75,7 +73,6 @@ class SeedController extends Controller
 			throw new Exception($e->getMessage());
 			$tx->rollback();
 		}
-		*/
 	}
 
 	/**

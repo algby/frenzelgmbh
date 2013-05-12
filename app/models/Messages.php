@@ -59,19 +59,23 @@ class Messages extends ActiveRecord
 		);
 	}
 
-	/**
-	 * @return array relational rules.
-	 */
-	public function relations()
-	{
-		// NOTE: you may need to adjust the relation name and the related
-		// class name for the relations automatically generated below.
 
-		return array(
-			'receiver' => array(self::BELONGS_TO, 'User', 'reciever_id'),
-			'sender' => array(self::BELONGS_TO, 'User', 'sender_id'),
-		);
+	/**
+	* @return model \app\models\user 
+	*/
+
+	public function getReciever(){
+		return $this->hasOne('User', array('id' => 'reciever_id'));
 	}
+
+	/**
+	* @return model \app\models\user 
+	*/
+	
+	public function getSender(){
+		return $this->hasOne('User', array('id' => 'sender_id'));
+	}
+	
 
 	/**
 	 * @return array customized attribute labels (name=>label)

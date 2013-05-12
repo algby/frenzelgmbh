@@ -80,12 +80,8 @@ class MessagesController extends Controller
 	public function actionIndex($tag='')
 	{
 		$query = Messages::find()
-			->where('deleted_by='. Messages::DELETED_BY_SENDER)
 			->orderBy('update_time DESC');
 
-		if (!empty($tag))
-			$query->andWhere(array('like', 'tags', '%'.$tag.'%'));
-		
 		$countQuery = clone $query;
 		$pages = new Pagination($countQuery->count());
 
@@ -95,7 +91,8 @@ class MessagesController extends Controller
 				->all();
 
 		echo $this->render('index', array(
-				'models' => $models
+				'models' => $models,
+				'pages'  => $pages
 		));
 	}
 

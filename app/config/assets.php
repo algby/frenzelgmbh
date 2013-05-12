@@ -16,6 +16,7 @@ return array(
             'js/bootstrap.js',
             'js/pagecontrol.js',
             'js/accordion.js',
+            'js/carousel.js',
         ),
         'depends' => array(
             'yii',

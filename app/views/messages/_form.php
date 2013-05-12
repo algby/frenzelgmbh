@@ -4,7 +4,7 @@ use \yii\widgets\ActiveForm;
 
 ?>
 
-<?php $form = $this->beginWidget(ActiveForm::className(), array(
+<?php $form = ActiveForm::begin($this, array(
 	'options' => array('class' => 'form-horizontal'),
 	'fieldConfig' => array(
 			'class' => 'app\components\MyActiveField'
@@ -21,4 +21,4 @@ use \yii\widgets\ActiveForm;
 		<?php echo Html::submitButton($model->isNewRecord ? 'Create' : 'Save', null, null, array('class' => 'button bg-color-blue fg-color-white')); ?>
 	</div>
 
-<?php $this->endWidget(); ?>
+<?php ActiveForm::end(); ?>

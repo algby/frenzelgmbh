@@ -4,6 +4,8 @@
  * @var $content string
  */
 use yii\helpers\Html;
+use yii\debug\Toolbar;
+
 $this->registerAssetBundle('app');
 ?>
 
@@ -86,7 +88,7 @@ $this->registerAssetBundle('app');
 	</div>
 	<?php $this->endBody(); ?>
 </div>
-<?php $this->widget('yii\debug\Toolbar'); ?> 
+<?php echo Toolbar::widget($this); ?> 
 </body>
 </html>
 <?php $this->endPage(); ?>

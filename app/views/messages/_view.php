@@ -1,13 +1,14 @@
 <?php 
 use \yii\helpers\Html;
+use \yii\widgets\Block;
 
 ?>
 
-<?php $this->beginWidget('\yii\widgets\Block', array('id'=>'sidebar')); ?>
+<?php Block::begin($this, array('id'=>'sidebar')); ?>
 	<ul>
 		<li class="sticker sticker-color-blue"><?php echo Html::a('<i class="icon-plus"></i>Create Message', array('/messages/create')); ?></li>
 	</ul>
-<?php $this->endWidget(); ?>
+<?php Block::end(); ?>
 
 <div class="row-fluid">	
 	<h4><?php echo Html::encode($data->subject); ?></h4>

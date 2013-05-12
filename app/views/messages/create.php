@@ -1,16 +1,19 @@
 <?php
+
+use yii\widgets\Block;
+
 $this->params['breadcrumbs']=array(
 	'Create Message',
 );
 ?>
 <h1>Create Message</h1>
 
-<?php $this->beginWidget('\yii\widgets\Block', array('id'=>'sidebar')); ?>
+<?php Block::begin($this, array('id'=>'sidebar')); ?>
 	<ul>
 		<li><a href="#">Test</a></li>
 		<li class="sticker sticker-color-blue"><a>Item</a></li>
 		<li><a><i class="icon-cube"></i>Item</a></li>
 	</ul>
-<?php $this->endWidget(); ?>
+<?php Block::end(); ?>
 
 <?php echo $this->context->renderPartial('_form', array('model'=>$model)); ?>

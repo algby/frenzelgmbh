@@ -59,7 +59,7 @@ $this->title = 'Welcome';
 	    <div class="tile double">
 	    	<div class="tile-content">
 				<h3 style="margin-bottom: 5px;"><?php echo Messages::find(1)->subject; ?></h3>
-				<p><?php echo Messages::find(1)->body; ?></p>
+				<p><?php echo Messages::find(1)->msg_body; ?></p>
 			</div>
 			<div class="brand">
 				<div class="badge">10</div>

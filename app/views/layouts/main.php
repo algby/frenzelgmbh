@@ -65,7 +65,7 @@ $this->registerAssetBundle('app');
 					<?php if (Yii::$app->user->isGuest): ?>
 					<li><?php echo Html::a('Login', array('/site/login')); ?></li>
 					<?php else: ?>
-					<li><?php echo Html::a('Logout (' . Html::encode(Yii::$app->user->identity->username) . ')', array('/site/logout')); ?></li>
+					<li><?php echo Html::a('Logout (' . Html::encode(Yii::$app->user->identity->email) . ')', array('/site/logout')); ?></li>
 					<?php endif; ?>
 				</ul>				
 			</div>

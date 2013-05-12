@@ -126,7 +126,7 @@ class DbFixtureManager extends Component
 	{
 		$initFile=$this->basePath . DIRECTORY_SEPARATOR . $this->initScript;
 
-		//$this->checkIntegrity(false);
+		//$this->checkIntegrity(false); not supported in sqlite
 
 		if(is_file($initFile))
 			require($initFile);
@@ -138,7 +138,7 @@ class DbFixtureManager extends Component
 				$this->loadFixture($tableName);
 			}
 		}
-		$this->checkIntegrity(true);
+		//$this->checkIntegrity(true); not supported in sqlite
 	}
 
 	/**
@@ -177,15 +177,15 @@ class DbFixtureManager extends Component
 			return false;
 
 		$rows=array();
-		$schema=$this->getDbConnection()->getSchema();
-		$builder=$schema->getCommandBuilder();
-		$table=$schema->getRawTableName($tableName);
+		$schema = $this->getDbConnection()->getTableSchema($tableName);
+		$globalSchema = $this->getDbConnection()->getSchema();
+		$table  = $globalSchema->getRawTableName($tableName);		
 
-		foreach(require($fileName) as $alias=>$row)
+		foreach(require($fileName) as $alias=>$row)			
 		{
-			$builder->createInsertCommand($table,$row)->execute();
-			$primaryKey=$table->primaryKey;
-			if($table->sequenceName!==null)
+			$this->getDbConnection()->createCommand()->insert($table,$row)->execute();
+			$primaryKey=$schema->primaryKey;
+			if($schema->sequenceName!==null)
 			{
 				if(is_string($primaryKey) && !isset($row[$primaryKey]))
 					$row[$primaryKey]=$builder->getLastInsertID($table);
@@ -195,7 +195,7 @@ class DbFixtureManager extends Component
 					{
 						if(!isset($row[$pk]))
 						{
-							$row[$pk]=$builder->getLastInsertID($table);
+							$row[$pk]=$globalSchema->getLastInsertID($table);
 							break;
 						}
 					}
@@ -245,7 +245,8 @@ class DbFixtureManager extends Component
 	public function checkIntegrity($check)
 	{
 		foreach($this->schemas as $schema)
-			$this->getDbConnection()->getSchema()->checkIntegrity($check,$schema);
+			$builder = $this->getDbConnection()->getSchema()->createQueryBuilder();
+			$builder->checkIntegrity($check,$schema);
 	}
 
 	/**
@@ -259,10 +260,12 @@ class DbFixtureManager extends Component
 	{
 		$db=$this->getDbConnection();
 		$schema=$db->getSchema();
+		$builder=$schema->createQueryBuilder();
+
 		if(($table=$schema->getRawTableName($tableName))!==null)
 		{
 			$db->createCommand('DELETE FROM '.$table)->execute();
-			//$schema->resetSequence($table,1); currently not supported
+			$builder->resetSequence($table,1); //wrong, moved to querybuilder! changed by pf
 		}
 		else
 			throw new Exception("Table '$tableName' does not exist.");

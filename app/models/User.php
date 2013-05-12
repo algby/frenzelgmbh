@@ -50,7 +50,7 @@ class User extends ActiveRecord
             'username' 	=> 'Title',
             'password' 	=> 'Password',
             'email' 	=> 'EMail',
-            'content' 	=> 'Content'
+            'role' 		=> 'Role'
         );
     }
 

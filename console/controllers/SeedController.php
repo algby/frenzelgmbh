@@ -1,6 +1,6 @@
 <?php
 
-use Yii;
+use \Yii;
 use \yii\console\Exception;
 use \yii\console\Controller;
 use \yii\db\Connection;
@@ -62,6 +62,8 @@ class SeedController extends Controller
 	 */
 	public function actionSeed()
 	{
+		echo "Seed It";
+		/*
 		$tx = $this->db->beginTransaction();
 		try
 		{
@@ -70,9 +72,10 @@ class SeedController extends Controller
 		}
 		catch (Exception $e)
 		{
-			throw new CException($e->getMessage());
+			throw new Exception($e->getMessage());
 			$tx->rollback();
 		}
+		*/
 	}
 
 	/**

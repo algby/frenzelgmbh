@@ -30,7 +30,7 @@ $this->title = 'Contact';
 		If you have business inquiries or other questions, please fill out the following form to contact us. Thank you.
 	</p>
 
-	<?php $form = $this->beginWidget(ActiveForm::className(), array(
+	<?php $form = ActiveForm::begin($this, array(
 		'options' => array('class' => 'form-horizontal'),
 		'fieldConfig' => array(
 			'class' => 'app\components\MyActiveField'
@@ -54,5 +54,5 @@ $this->title = 'Contact';
 		<div class="form-actions">
 			<?php echo Html::submitButton('Submit', null, null, array('class' => 'button bg-color-blue fg-color-white')); ?>
 		</div>
-	<?php $this->endWidget(); ?>
+	<?php ActiveForm::end(); ?>
 </section>

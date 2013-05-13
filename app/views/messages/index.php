@@ -9,4 +9,7 @@ foreach($models as $model) {
 		'data'=>$model,
 	));
 }
+
+echo LinkPager::widget($this, array('pagination'=>$pagination));
+
 ?>

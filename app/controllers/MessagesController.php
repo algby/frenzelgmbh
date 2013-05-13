@@ -89,16 +89,16 @@ class MessagesController extends Controller
 			->orderBy('update_time DESC');
 
 		$countQuery = clone $query;
-		$pages = new Pagination($countQuery->count());
+		$pagination = new Pagination($countQuery->count());
 
-		$models = $query->offset($pages->offset)
-				->limit($pages->limit)
-				->with('sender','reciever')
-				->all();
+		$models = $query->offset($pagination->offset)
+			->limit($pagination->limit)
+			->with('sender', 'reciever')
+			->all();
 
 		echo $this->render('index', array(
-				'models' => $models,
-				'pages'  => $pages
+			'models' => $models,
+			'pagination' => $pagination,
 		));
 	}
 
@@ -110,15 +110,15 @@ class MessagesController extends Controller
 		$query = Messages::find()->all();
 
 		$countQuery = clone $query;
-		$pages = new Pagination($countQuery->count());
+		$pagination = new Pagination($countQuery->count());
 		
-		$models = $query->offset($pages->offset)
-				->limit($pages->limit)
+		$models = $query->offset($pagination->offset)
+				->limit($pagination->limit)
 				->all();
 
 		echo $this->render('admin', array(
 				'models' => $models,
-				'pages' => $pages,
+				'pagination' => $pagination,
 			));
 	}
 

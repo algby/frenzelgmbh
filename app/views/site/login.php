@@ -1,5 +1,6 @@
 <?php
 use yii\helpers\Html;
+use yii\widgets\ActiveForm;
 /**
  * @var yii\base\View $this
  * @var yii\widgets\ActiveForm $form
@@ -13,7 +14,8 @@ $this->title = 'Login';
 
 	<p>Please fill out the following fields to login:</p>
 
-	<?php $form = $this->beginWidget('yii\widgets\ActiveForm', array('options' => array('class' => 'form-horizontal'),
+	<?php $form = ActiveForm::begin($this, array(
+		'options' => array('class' => 'form-horizontal'),
 		'fieldConfig' => array(
 			'class' => 'app\components\MyActiveField'
 		)
@@ -25,5 +27,5 @@ $this->title = 'Login';
 		<div class="form-actions">
 			<?php echo Html::submitButton('Login', null, null, array('class' => 'button bg-color-blue fg-color-white')); ?>
 		</div>
-	<?php $this->endWidget(); ?>
+	<?php ActiveForm::end(); ?>
 </section>

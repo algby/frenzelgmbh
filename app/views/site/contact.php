@@ -30,7 +30,7 @@ $this->title = 'Contact';
 		If you have business inquiries or other questions, please fill out the following form to contact us. Thank you.
 	</p>
 
-	<?php $form = ActiveForm::begin($this, array(
+	<?php $form = ActiveForm::begin(array(
 		'options' => array('class' => 'form-horizontal'),
 		'fieldConfig' => array(
 			'class' => 'app\components\MyActiveField'
@@ -44,7 +44,7 @@ $this->title = 'Contact';
 			$field = $form->field($model, 'verifyCode');
 			echo $field->begin();
 			echo $field->label();
-			$this->widget(Captcha::className());
+			echo Captcha::widget();
 			echo "<div class='span4'>";
 			echo MyHtml::activeTextInput($model, 'verifyCode',array());
 			echo "</div>";

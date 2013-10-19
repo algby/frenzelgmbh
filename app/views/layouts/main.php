@@ -88,7 +88,7 @@ $this->registerAssetBundle('app');
 	</div>
 	<?php $this->endBody(); ?>
 </div>
-<?php echo Toolbar::widget($this); ?> 
+<?php echo Toolbar::widget(); ?> 
 </body>
 </html>
 <?php $this->endPage(); ?>

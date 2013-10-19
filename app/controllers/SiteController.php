@@ -24,6 +24,7 @@ class SiteController extends Controller
 
 	public function actionIndex()
 	{
+		$this->layout = 'column3';
 		echo $this->render('index');
 	}
 

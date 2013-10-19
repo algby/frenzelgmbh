@@ -3,7 +3,7 @@ use yii\helpers\Html;
 use yii\widgets\Block;
 ?>
 
-<?php Block::begin($this, array('id'=>'sidebar')); ?>
+<?php Block::begin(array('id'=>'sidebar')); ?>
 	<ul>
 		<li class="sticker sticker-color-blue"><a><i class="icon-diamonds"></i>Corporate Planning</a></li>
 		<li class="sticker sticker-color-blue"><a><i class="icon-spades"></i>Technology</a></li>

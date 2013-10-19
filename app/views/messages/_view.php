@@ -4,7 +4,7 @@ use \yii\widgets\Block;
 
 ?>
 
-<?php Block::begin($this, array('id'=>'sidebar')); ?>
+<?php Block::begin(array('id'=>'sidebar')); ?>
 	<ul>
 		<li class="sticker sticker-color-blue"><?php echo Html::a('<i class="icon-plus"></i>Create Message', array('/messages/create')); ?></li>
 	</ul>

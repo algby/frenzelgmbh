@@ -67,7 +67,5 @@ return array(
 			)
         )
 	),
-	'params' => array(
-		'adminEmail' => 'philipp@frenzel.net',
-	),
+	'params' => require(__DIR__ . '/params.php'),
 );

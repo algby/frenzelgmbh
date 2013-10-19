@@ -14,7 +14,7 @@ $this->title = 'Login';
 
 	<p>Please fill out the following fields to login:</p>
 
-	<?php $form = ActiveForm::begin($this, array(
+	<?php $form = ActiveForm::begin(array(
 		'options' => array('class' => 'form-horizontal'),
 		'fieldConfig' => array(
 			'class' => 'app\components\MyActiveField'

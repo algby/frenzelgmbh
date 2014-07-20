@@ -14,6 +14,10 @@ return array(
 		'cache' => array(
 			'class' => 'yii\caching\FileCache',
 		),
+		'request' => [
+	      'enableCsrfValidation' => true,
+	      'cookieValidationKey' => 'mysecrethobby',
+	    ],
 		/*'db' => array(
 			'class' => 'yii\db\Connection',
 			'dsn' => 'mysql:host=localhost;dbname=test',
